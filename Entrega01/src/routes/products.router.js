@@ -8,15 +8,6 @@ router.get('/', (req, res) => {
     res.json(products)
 })
 
-router.post ('/', (req, res) => {
-    const newProduct = req.body
-    users.push(newProduct)
-    res.status(201).json(newProduct)
-} )
-
-router.get ('/', (req, res) => {
-
-})
 
 router.post ('/', (req, res) => {
     const {id, tittle, description, code, price, status, stock, category, thumbnails} = req.body
